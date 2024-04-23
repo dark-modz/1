@@ -4518,7 +4518,7 @@ do
 					FontSize = Enum.FontSize.Size18, 
 					Name = "title", 
 					Position = UDim2.new(0, 78, 0, 38), 
-					Text = "Codex Android"),
+					Text = ("Codex Android"),
 					TextColor3 = Color3.fromHex("ffffff"), 
 					TextSize = 16, 
 					TextTransparency = 1,
