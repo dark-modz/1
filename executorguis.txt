@@ -110,6 +110,3 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 			})
 		end,
 	})
-
-
-if game.CoreGui.CubiX then game.CoreGui.CubiX:Destroy end
