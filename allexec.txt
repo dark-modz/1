@@ -1,0 +1,230 @@
+if game.CoreGui.Cubix then
+	game.CoreGui.Cubix:Destroy
+
+	local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+	local Window = Rayfield:CreateWindow({
+		Name = "Executor UI",
+		LoadingTitle = "Choose your Executor",
+		LoadingSubtitle = "Keyless",
+		ConfigurationSaving = {
+			Enabled = false,
+			FolderName = "",
+			FileName = ""
+		},
+		KeySystem = false,
+		KeySettings = {
+			Title = "",
+			Subtitle = "",
+			Note = "",
+			SaveKey = true,
+			Key = ""
+		}
+	
+	})
+	
+	if not isfile("choice.txt") then
+	 writefile("choice.txt","None")
+	end
+	
+	loadui = readfile("choice.txt")
+	
+	if loadui == "Delta" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
+	elseif loadui == "Codex" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
+	elseif loadui == "Vega X" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
+	elseif loadui == "Trigon" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/keylesstrigon/main/ui.txt",true))()
+	elseif loadui == "Evon" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/evoon.txt",true))()
+	elseif loadui == "Arceus X V3" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+	end
+	
+	
+	local Tab = Window:CreateTab("Main", 4483362458)
+	
+	local Section = Tab:CreateSection("Executors Keyless")
+	
+	local Button = Tab:CreateButton({
+		Name = "Delta Executor",
+		Callback = function() 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
+			writefile("choice.txt","Delta")
+		end,
+	})
+	
+	local Button = Tab:CreateButton({
+		Name = "Codex Executor",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
+			writefile("choice.txt","Codex")
+		end,
+	})
+	
+	local Button = Tab:CreateButton({
+		Name = "Vega X (PC Connection!)",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
+			writefile("choice.txt","Vega X")
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Message";
+				Text = "Just click 'Check Key', no need to get it! ";
+				Duration = 10;
+			})
+		end,
+	})
+	
+	local Button = Tab:CreateButton({
+		Name = "Trigon Executor",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/keylesstrigon/main/ui.txt",true))()
+			writefile("choice.txt","Trigon")
+		end,
+	})
+	
+	
+	local Button = Tab:CreateButton({
+		Name = "Evon Executor",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/evoon.txt",true))()
+			writefile("choice.txt","Evon")
+		end,
+	})
+	
+	local Button = Tab:CreateButton({
+		Name = "Arceus X V3 | Credit Chillz",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+			writefile("choice.txt","Arceus X V3")
+		end,
+	})
+	
+	local Button = Tab:CreateButton({
+		Name = "YouTube : darkModz",
+		Callback = function()
+			setclipboard("https://youtube.com/@darkmodzX")
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Message";
+				Text = "Copied link to clipboard";
+				Duration = 3;
+			})
+		end,
+	})
+else
+	local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "Executor UI",
+	LoadingTitle = "Choose your Executor",
+	LoadingSubtitle = "Keyless",
+	ConfigurationSaving = {
+		Enabled = false,
+		FolderName = "",
+		FileName = ""
+	},
+	KeySystem = false,
+	KeySettings = {
+		Title = "",
+		Subtitle = "",
+		Note = "",
+		SaveKey = true,
+		Key = ""
+	}
+
+})
+
+if not isfile("choice.txt") then
+ writefile("choice.txt","None")
+end
+
+loadui = readfile("choice.txt")
+
+if loadui == "Delta" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
+elseif loadui == "Codex" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
+elseif loadui == "Vega X" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
+elseif loadui == "Trigon" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/keylesstrigon/main/ui.txt",true))()
+elseif loadui == "Evon" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/evoon.txt",true))()
+elseif loadui == "Arceus X V3" then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+end
+
+
+local Tab = Window:CreateTab("Main", 4483362458)
+
+local Section = Tab:CreateSection("Executors Keyless")
+
+local Button = Tab:CreateButton({
+	Name = "Delta Executor",
+	Callback = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
+		writefile("choice.txt","Delta")
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Codex Executor",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
+		writefile("choice.txt","Codex")
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Vega X (PC Connection!)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
+		writefile("choice.txt","Vega X")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Message";
+			Text = "Just click 'Check Key', no need to get it! ";
+			Duration = 10;
+		})
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Trigon Executor",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/keylesstrigon/main/ui.txt",true))()
+		writefile("choice.txt","Trigon")
+	end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Evon Executor",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/evoon.txt",true))()
+		writefile("choice.txt","Evon")
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Arceus X V3 | Credit Chillz",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+		writefile("choice.txt","Arceus X V3")
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "YouTube : darkModz",
+	Callback = function()
+        setclipboard("https://youtube.com/@darkmodzX")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Message";
+			Text = "Copied link to clipboard";
+			Duration = 3;
+		})
+	end,
+})
+end
+
