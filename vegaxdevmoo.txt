@@ -1,9 +1,4 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
---download vega x windows: https://vegax.gg/
---put this in a auto exe folder for better use yk
-wait(2) -- prevent crash when you join a game (auto exe)
+
 -- Instances: 27 | Scripts: 4 | Modules: 0
 local G2L = {};
 
