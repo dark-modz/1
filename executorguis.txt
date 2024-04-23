@@ -45,7 +45,7 @@ end
 
 local Tab = Window:CreateTab("Main", 4483362458)
 
-local Section = Tab:CreateSection("Executors Keyless")
+local Section = Tab:CreateSection("Executors Keyless | Your choice will save")
 
 local Button = Tab:CreateButton({
 	Name = "Delta Executor",
@@ -68,6 +68,11 @@ local Button = Tab:CreateButton({
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
 		writefile("choice.txt","Vega X")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Message";
+			Text = "Just click 'Check Key', no need to get it! ";
+			Duration = 10;
+		})
 	end,
 })
 
