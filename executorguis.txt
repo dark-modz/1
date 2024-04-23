@@ -23,7 +23,8 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 	if not isfile("choice.txt") then
 	 writefile("choice.txt","None")
 	end
-	
+
+--[[
 	loadui = readfile("choice.txt")
 	
 	if loadui == "Delta" then
@@ -41,9 +42,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 	elseif loadui == "Vega X PC" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegaxdevmoo.txt"))()
 	end
-
-
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegaxdevmoo.txt",true))()
+--]]
 	
 	local Tab = Window:CreateTab("Main", 4483362458)
 	
