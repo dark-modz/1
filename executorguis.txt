@@ -1,4 +1,4 @@
-print("loaded fixed ✅")
+print("loaded fixed 2 ✅")
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
