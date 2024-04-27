@@ -22,7 +22,9 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 	
 	})
 
-        if game.CoreGui.CubiX then game.CoreGui.CubiX:Destroy() elseif game.CoreGui.Tx3Xploit then game.CoreGui.Tx3Xploit:Destroy() end
+        if game.CoreGui.CubiX then game.CoreGui.CubiX:Destroy()
+end
+if game.CoreGui.Tx3Xploit then game.CoreGui.Tx3Xploit:Destroy() end
 	
 	if not isfile("choice.txt") then
 	 writefile("choice.txt","None")
