@@ -1,4 +1,6 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua'))()
+print("loaded new✅")
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 	local Window = Rayfield:CreateWindow({
 		Name = "Executor UI",
@@ -23,36 +25,40 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 	if not isfile("choice.txt") then
 	 writefile("choice.txt","None")
 	end
-
---[[
+	
 	loadui = readfile("choice.txt")
 	
 	if loadui == "Delta" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
+Rayfield:Destroy()
 	elseif loadui == "Codex" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
+Rayfield:Destroy()
 	elseif loadui == "Vega X" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
+Rayfield:Destroy()
 	elseif loadui == "Trigon" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/keylesstrigon/main/ui.txt",true))()
+Rayfield:Destroy()
 	elseif loadui == "Evon" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/evoon.txt",true))()
+Rayfield:Destroy()
 	elseif loadui == "Arceus X V3" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-	elseif loadui == "Vega X PC" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegaxdevmoo.txt"))()
+Rayfield:Destroy()
 	end
---]]
+	
 	
 	local Tab = Window:CreateTab("Main", 4483362458)
 	
-	local Section = Tab:CreateSection("Executors Keyless")
+	local Section = Tab:CreateSection("Executors Keyless | Your choice will save")
 	
 	local Button = Tab:CreateButton({
 		Name = "Delta Executor",
 		Callback = function() 
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
 			writefile("choice.txt","Delta")
+ Rayfield:Destroy()
 		end,
 	})
 	
@@ -61,11 +67,12 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 		Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
 			writefile("choice.txt","Codex")
+ Rayfield:Destroy()
 		end,
 	})
 	
 	local Button = Tab:CreateButton({
-		Name = "Vega X",
+		Name = "Vega X (PC Connection!)",
 		Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegan_x.txt",true))()
 			writefile("choice.txt","Vega X")
@@ -74,19 +81,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 				Text = "Just click 'Check Key', no need to get it! ";
 				Duration = 10;
 			})
-		end,
-	})
-
-		local Button = Tab:CreateButton({
-		Name = "Vega X PC",
-		Callback = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/vegaxdevmoo.txt",true))()
-			writefile("choice.txt","Vega X PC")
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Message";
-				Text = "You need vega x dev mode with this at vegax.gg";
-				Duration = 15;
-			})
+ Rayfield:Destroy()
 		end,
 	})
 	
@@ -95,6 +90,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 		Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/keylesstrigon/main/ui.txt",true))()
 			writefile("choice.txt","Trigon")
+ Rayfield:Destroy()
 		end,
 	})
 	
@@ -104,6 +100,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 		Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/evoon.txt",true))()
 			writefile("choice.txt","Evon")
+ Rayfield:Destroy()
 		end,
 	})
 	
@@ -112,6 +109,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 		Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
 			writefile("choice.txt","Arceus X V3")
+ Rayfield:Destroy()
 		end,
 	})
 	
@@ -126,3 +124,6 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Siri
 			})
 		end,
 	})
+
+
+if game.CoreGui.CubiX then game.CoreGui.CubiX:Destroy() end
