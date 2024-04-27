@@ -1,3 +1,5 @@
+print("✅loaded new")
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 	local Window = Rayfield:CreateWindow({
@@ -122,3 +124,6 @@ Rayfield:Destroy()
 			})
 		end,
 	})
+
+
+if game.CoreGui.CubiX then game.CoreGui.CubiX:Destroy() end
