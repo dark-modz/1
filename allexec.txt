@@ -126,14 +126,19 @@ Rayfield:Destroy()
 	})
 
 
-pcall(function()
-    if game.CoreGui.CubiX then
-        game.CoreGui.CubiX:Destroy()
-    end
-end)
 
 pcall(function()
     if game.CoreGui.Ethos then
         game.CoreGui.Ethos:Destroy()
+	print("destroyed✅")
     end
 end)
+
+pcall(function()
+    if game.CoreGui.CubiX then
+        game.CoreGui.CubiX:Destroy()
+	print("destroyed✅")
+    end
+end)
+
+
