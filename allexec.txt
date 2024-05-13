@@ -131,3 +131,9 @@ pcall(function()
         game.CoreGui.CubiX:Destroy()
     end
 end)
+
+pcall(function()
+    if game.CoreGui.Ethos then
+        game.CoreGui.Ethos:Destroy()
+    end
+end)
