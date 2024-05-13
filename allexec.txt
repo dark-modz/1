@@ -126,4 +126,8 @@ Rayfield:Destroy()
 	})
 
 
-if game.CoreGui.CubiX then game.CoreGui.CubiX:Destroy() end
+pcall(function()
+    if game.CoreGui.CubiX then
+        game.CoreGui.CubiX:Destroy()
+    end
+end)
