@@ -56,7 +56,7 @@ Rayfield:Destroy()
 	local Button = Tab:CreateButton({
 		Name = "Delta Executor",
 		Callback = function() 
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/deltax",true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/delta_x",true))()
 			writefile("choice.txt","Delta")
  Rayfield:Destroy()
 		end,
