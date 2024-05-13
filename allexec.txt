@@ -29,7 +29,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 	loadui = readfile("choice.txt")
 	
 	if loadui == "Delta" then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/deltaui/main/ui.txt",true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/delta_x",true))()
 Rayfield:Destroy()
 	elseif loadui == "Codex" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dark-modz/1/main/codexcocc.txt",true))()
