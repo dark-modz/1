@@ -1,3 +1,10 @@
+--[[
+
+    Title: Delta Version: X
+    Created By: Chillz#0348
+    Author: Lxnny_Termed#0795 & Chillz#0348 (DeltaTeam)
+]]
+
 local httpService = cloneref(game:GetService("HttpService"));
 
 local _tablefind = clonefunction(table.find);
@@ -34,6 +41,8 @@ if not isfile("uses_syn") then
 end
 
 -- Go to near end line for configs.
+
+local function executescript(sc) runcode(sc) end
 
 --local executeclipboard = readclipboard_hideenv
 
@@ -1751,7 +1760,7 @@ DELTA["c0"]["MultiLine"] = true;
 DELTA["c0"]["BackgroundTransparency"] = 1;
 DELTA["c0"]["Size"] = UDim2.new(0.9882024526596069, 0, 0.9716954827308655, 0);
 DELTA["c0"]["Text"] = "";
-DELTA["c0"]["PlaceholderText"] = "YouTube : darkModz";
+DELTA["c0"]["PlaceholderText"] = "Thank you for using Delta <3\nDelta is made by Lxnny and #TeamDelta !";
 DELTA["c0"]["Position"] = UDim2.new(0.011494521982967854, 0, 0.012946978211402893, 3);
 DELTA["c0"]["AutomaticSize"] = Enum.AutomaticSize.XY;
 DELTA["c0"]["Visible"] = false;
@@ -3947,7 +3956,7 @@ DELTA_MODULES[DELTA["160"]] = {
     script.Parent.Executor.Sidemenu.Script.Overlay.Holder.Showcase.Title.Text = title
     script.Parent.Executor.Sidemenu.Script.Overlay.Holder.Showcase.Description.Text = desc
     getgenv().ExecuteSuggestedScript = function()
-    loadstring(source)()
+    executescript(source)
     end
     end
 
@@ -4289,7 +4298,7 @@ DELTA_MODULES[DELTA["160"]] = {
 
 
     newscript.Button.MouseButton1Click:Connect(function()
-        loadstring(source)()
+        executescript(source)
         end)
 
         newscript.Button1.MouseButton1Click:Connect(function()
@@ -4420,7 +4429,7 @@ end
 
 -- Discord
 buttons.Button2.MouseButton1Click:Connect(function()
-    setclipboard("https://discord.gg/Wu9tFvVFaB")
+    setclipboard("https://discord.gg/deltaex")
     end)
 
 
@@ -4681,7 +4690,7 @@ local lib = require(script.Parent.Parent.Parent.Parent.UILibrary)
 local btns = script.Parent
 btns.Parent.Parent.Visible = false
 btns.Button1.MouseButton1Click:Connect(function()
-    loadstring(lib:GetSelectedScript())()
+    executescript(lib:GetSelectedScript())
 
     if(not isfile("preventautoclose")) then
         btns.Parent.Visible = false
@@ -4885,7 +4894,7 @@ btns.Execute.MouseButton1Click:Connect(function()
     for i,v in pairs(btns.Parent.Code:GetChildren()) do
     if v:IsA("TextBox") then
     if v.Visible == true then
-    loadstring(v.Text)()
+    executescript(v.Text)
     end
     end
     end
@@ -5320,7 +5329,7 @@ UILib.Settings:AddDropdown("Icon Color", "Change the floating Icon's color", rea
 	end)
 
 UILib.Settings:AddButton("Join Discord", "Copies our discord invite", function()
-        setclipboard("https://discord.gg/deltaexploits")
+        setclipboard("https://discord.gg/deltaex")
         end)  
 
 UILib.Settings:AddButton("Rejoin", "Rejoins your current server", function()
@@ -5747,12 +5756,12 @@ end)()
 
 function whitelist()
     local username = game.Players.LocalPlayer.Name
-    local response = game:HttpGet("https://pastebin.com/raw/WG41yTkp")
+    local response = game:HttpGet("https://whitelist.deltaexploits.net/api/whitelisted?username=" .. username)
     local success, data = pcall(function()
         return game:GetService('HttpService'):JSONDecode(response)
     end)
     if success and data and data["data"] and data["data"]["whitelisted"] == true then
-        print("whitelisted✅ darkmodz")
+        --print("whitelisted")
         writefile("dsigfiureikuger.txt", "WHITELIST")
         GrantAccess()
         return true
@@ -5765,7 +5774,7 @@ function boost_whitelist()
     local response = game:HttpGet("https://deltafunny.dosware.repl.co/checkKey/" .. username)
     if string.find(response, "cock_cock_cock") then
         writefile("dsigfiureikuger.txt", "BOOST")
-        GrantAccess()
+        --GrantAccess()
         return true
     end
     return false
@@ -5786,7 +5795,7 @@ function checkkey()
 
     local savedkey = readfile("dsigfiureikuger.txt")
 
-	local keyless = "true"
+	local keyless = game:HttpGet("https://pastebin.com/raw/vNV4Ahxr")
 	if string.find(keyless, "true") then
 		GrantAccess()
         return true
@@ -5802,11 +5811,6 @@ function checkkey()
             GrantAccess()
             return true
         end
-    end
-    
-    if(savedkey == "ALYSSE") then
-            GrantAccess()
-            return true
     end
 
     if(savedkey == "BOOST") then
